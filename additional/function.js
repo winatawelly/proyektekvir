@@ -38,7 +38,7 @@ function printOutput(){
 	var type = 'run';
 	$.ajax({
 		type:"POST",
-		url:"runScript.php",
+		url:"./php/runScript.php",
 		data:{loginVM:loginVM,username:username,password:password,script:script,interpreter:interpreter,type:type},
 		success: function(response){
 			$("#terminalOutput").html(response);
@@ -71,7 +71,7 @@ function power(mode){
 	//send selected vm and selected mode to power.php
 	$.ajax({
 		type:"POST",
-		url:"power.php",
+		url:"./php/power.php",
 		data:{mode:mode,selectedVM:selectedVM},
 		complete:function(data){
 			//stop animation and display message
@@ -126,7 +126,7 @@ function addVM(name,loc,type){
 	//send data to addVM.php
 	$.ajax({
 		type:"POST",
-		url:"addVM.php",
+		url:"./php/addVM.php",
 		data:{name:name,loc:loc,type:type},
 		complete:function(data){
 			if(data.responseText == "success"){
@@ -195,7 +195,7 @@ function addClone(){
 
 	$.ajax({
 		type:"POST",
-		url:"addClonedVM.php",
+		url:"./php/addClonedVM.php",
 		data:{selectedVM:selectedVM,clonedvmName:clonedvmName,cloneDir:cloneDir,cloneType:cloneType},
 		complete:function(data){
 			if(data.responseText == 'completed'){
@@ -218,7 +218,7 @@ function getVMList(){
 	var sortBy = $("#sortBy").find(":selected").text(); //get sort by
 	$.ajax({
 		type:"GET",
-		url:"getVMList.php",
+		url:"./php/getVMList.php",
 		data:{sortBy:sortBy},
 		complete:function(data){
 			$("#vmListTable").html('');
@@ -253,7 +253,7 @@ function deleteVM(x){
 	}
 	$.ajax({
 		type:"POST",
-		url:"deleteVM.php",
+		url:"./php/deleteVM.php",
 		data:{vmname:vmname,vmloc:vmloc},
 		complete:function(data){
 			getVMList();
@@ -273,7 +273,7 @@ function loginVM(){
 	$("#advancedAnimation").append('<div class="loader">Cloning...</div>');
 	$.ajax({
 		method:"POST",
-		url:"login.php",
+		url:"./php/login.php",
 		data:{loginVM:loginVM,username:username,password:password,type:type},
 		complete:function(data){
 			$("#advancedAnimation").html('');
@@ -305,7 +305,7 @@ function runScript(){
 	  fd.append("fileupload", $("#scriptFile")[0].files[0]);
 	  //upload text file
 	  $.ajax({
-	    url: "upload.php",
+	    url: "./php/upload.php",
 	    type: "POST",
 	    contentType: false,
 	    processData: false,
@@ -314,7 +314,7 @@ function runScript(){
 	      	//result is the path to uploaded text file;
 	      	$.ajax({
 	      		type:"POST",
-	      		url:"runScript.php",
+	      		url:"./php/runScript.php",
 	      		data:{loginVM:loginVM,username:username,password:password,script:result,interpreter:interpreter,type:type},
 	      		complete:function(data){
 	      			$("#scriptOutput").html(data.responseText);

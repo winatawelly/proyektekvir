@@ -1,10 +1,10 @@
 <?php
 include_once "connect.php";
-$program = "F:/WELLY BACKUP/Kuliah/Semester 8/TekVir/cobaTekvir/Debug/power.exe";
+include_once "programList.php";
 $vmname = $_POST['vmname'];
 $vmloc = $_POST['vmloc'];
 $mode = "delete";
-$output = shell_exec('"'.$program.'"'.' '.$mode.' '.'"'.$vmloc.'"');
+$output = shell_exec('"'.$power.'"'.' '.$mode.' '.'"'.$vmloc.'"');
 
 if($output == "deleted"){
 	$sql = "DELETE FROM vmlocation where name = '$vmname'";

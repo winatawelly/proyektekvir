@@ -44,7 +44,7 @@
       <label for="loginVM">Select VM</label>
         <select class="form-control" id="loginVM">
           <?php
-          include_once "connect.php";
+          include_once "php/connect.php";
           $sql = "SELECT * FROM vmlocation";
           $result = mysqli_query($con,$sql);
           while($rows = mysqli_fetch_assoc($result)){
@@ -83,7 +83,7 @@
             <select class="form-control" id="selectedVM" onchange="prename()">
               <option>Select VM to clone</option>
               <?php
-              include_once "connect.php";
+              include_once "php/connect.php";
               $sql = "SELECT * FROM vmlocation";
               $result = mysqli_query($con,$sql);
               while($rows = mysqli_fetch_assoc($result)){

@@ -46,7 +46,7 @@
         <label for="selectedVM">Select VM</label>
         <select class="form-control" id="selectedVM">
           <?php
-          include_once "connect.php";
+          include_once "php/connect.php";
           $sql = "SELECT * FROM vmlocation";
           $result = mysqli_query($con,$sql);
           while($rows = mysqli_fetch_assoc($result)){

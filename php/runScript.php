@@ -1,11 +1,11 @@
 <?php
+include_once "programList.php";
 set_time_limit(0);
-$program = "F:/WELLY BACKUP/Kuliah/Semester 8/TekVir/cobaTekvir/Debug/cobaTekvir.exe";
 $vm = $_POST['loginVM'];
 $type = $_POST['type'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $interpreter = $_POST['interpreter'];
 $script = $_POST['script'];
-echo $output = shell_exec('"'.$program.'"'.' '.$type.' '.'"'.$vm.'"'.' '.'"'.$interpreter.'"'.' '.'"'.$script.'"'.' '.$username.' '.$password);
+echo $output = shell_exec('"'.$guestOps.'"'.' '.$type.' '.'"'.$vm.'"'.' '.'"'.$interpreter.'"'.' '.'"'.$script.'"'.' '.$username.' '.$password);
 ?>
