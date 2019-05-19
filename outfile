@@ -1,0 +1,29 @@
+total 1970276
+drwxr-xr-x  23 root root       4096 May 17 20:51 .
+drwxr-xr-x  23 root root       4096 May 17 20:51 ..
+drwxr-xr-x   2 root root       4096 May 12 08:08 bin
+drwxr-xr-x   3 root root       4096 May 17 20:52 boot
+drwxr-xr-x  18 root root       4000 May 19 00:18 dev
+drwxr-xr-x  91 root root       4096 May 12 08:08 etc
+drwxr-xr-x   3 root root       4096 May 11 17:18 home
+lrwxrwxrwx   1 root root         33 May 17 20:51 initrd.img -> boot/initrd.img-4.15.0-50-generic
+lrwxrwxrwx   1 root root         33 May 11 17:04 initrd.img.old -> boot/initrd.img-4.15.0-48-generic
+drwxr-xr-x  22 root root       4096 May 11 17:03 lib
+drwxr-xr-x   2 root root       4096 Feb 14 09:49 lib64
+drwx------   2 root root      16384 May 11 16:49 lost+found
+drwxr-xr-x   2 root root       4096 Feb 14 09:49 media
+drwxr-xr-x   2 root root       4096 Feb 14 09:49 mnt
+drwxr-xr-x   2 root root       4096 Feb 14 09:49 opt
+dr-xr-xr-x 192 root root          0 May 19 00:18 proc
+drwx------   3 root root       4096 May 11 17:18 root
+drwxr-xr-x  25 root root        780 May 19 00:19 run
+drwxr-xr-x   2 root root      12288 May 13 19:05 sbin
+drwxr-xr-x   4 root root       4096 May 11 17:19 snap
+drwxr-xr-x   2 root root       4096 Feb 14 09:49 srv
+-rw-------   1 root root 2017460224 May 11 17:05 swap.img
+dr-xr-xr-x  13 root root          0 May 19 00:18 sys
+drwxrwxrwt  11 root root       4096 May 19 00:19 tmp
+drwxr-xr-x  10 root root       4096 Feb 14 09:49 usr
+drwxr-xr-x  13 root root       4096 Feb 14 09:52 var
+lrwxrwxrwx   1 root root         30 May 17 20:51 vmlinuz -> boot/vmlinuz-4.15.0-50-generic
+lrwxrwxrwx   1 root root         30 May 11 17:04 vmlinuz.old -> boot/vmlinuz-4.15.0-48-generic
