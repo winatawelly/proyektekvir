@@ -5,8 +5,8 @@
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="style.css?newversiaosn">
-  <script src="function.js?newver1siossn"></script>
+  <link rel="stylesheet" href="additional/style.css">
+  <script src="additional/function.js?newversion"></script>
 
   <title>VMRA</title>
 </head>
